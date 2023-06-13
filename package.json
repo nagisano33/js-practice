@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nagisano33/js-practice/issues"
   },
-  "homepage": "https://github.com/nagisano33/js-practice#readme"
+  "homepage": "https://github.com/nagisano33/js-practice#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
 }
