@@ -46,10 +46,7 @@ export function getScoreMessage(point) {
       default: 
       Error(); //範囲外の時エラー
     }*/
-
-
-    const point=100;
-
+    
     if(point===100){
       return "perfect";
     }else if(80<=point){
