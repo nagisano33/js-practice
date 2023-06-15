@@ -1,6 +1,6 @@
 export function loop(times, callback) {
   // callback() を times 回 呼び出すプログラムを書くこと
-  for(const i=0;i<times;i++){ //違う気がする
+  for(let i=0;i<times;i++){ //違う気がする
   callback();
 }
 }
@@ -46,16 +46,17 @@ export function getScoreMessage(point) {
       default: 
       Error(); //範囲外の時エラー
     }*/
-    
+
     if(point===100){
       return "perfect";
+    }else if(point<0 || 100<point) {
+      throw new Error();
     }else if(80<=point){
-      return "good";
-    }else if(60<=point){
       return "nice";
+    }else if(60<=point){
+      return "good";
     }else if(0<=point){
       return "bad";
-    }else {
-      Error();
     }
-}
+  }
+
