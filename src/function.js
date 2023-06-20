@@ -1,6 +1,6 @@
 
 //数値型の引数が偶数かどうかを調べ、偶数なら true、奇数なら false を返す関数
-function oddorEven(num){
+function oddOrEven(num){
     return num%2===0;
 }
 
@@ -9,7 +9,7 @@ function oddorEven(num){
 //配列の要素に該当するものがなかった場合は空の配列を返す。
 //ただし、引数の配列が空だったり、そもそも配列ではなかった場合はエラーを返す。
 //また、配列の各要素へのアクセスには添え字を用いず、for ... of 命令を使用すること。
-function getEvennumber(array){
+function getEvenNumber(array){
     const newarray=[];
 
     if(array.length===0 || Array.isArray(array)===false){
