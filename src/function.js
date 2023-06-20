@@ -1,6 +1,6 @@
 
 //数値型の引数が偶数かどうかを調べ、偶数なら true、奇数なら false を返す関数
-function tyohan(num){
+function oddorEven(num){
     return num%2===0;
 }
 
